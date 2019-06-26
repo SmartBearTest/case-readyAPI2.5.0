@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <con:soapui-project id="605466f9-7eda-46e7-8ab7-ae5f6fa3ca2c" created="2.7.0" activeEnvironment="Default environment" name="REST Project 2" updated="2.5.0" encryptionMode="Selected properties" resourceRoot="" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+  <con:settings>
+    <con:setting id="605466f9-7eda-46e7-8ab7-ae5f6fa3ca2cfileName">REST-Project-2</con:setting>
+  </con:settings>
   <con:vcsConfiguration>
     <con:vcsName>Git</con:vcsName>
     <con:repositoryIdentifier>https://github.com/SmartBearTest/case-readyAPI2.5.0.git</con:repositoryIdentifier>
@@ -11,7 +13,7 @@
     <con:property encrypted="true">
       <con:name>username</con:name>
       <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-      <con:encryptedContent>VTJGc2RHVmtYMThNVjV1ZHZ1dCt1S0cyeE9CdHlOenFiT3cwOURHZlBEdVJHTnM1U29nZDdGNjhKeU0rQ3BrdGJ1RmtmazdFTFllSQ0KbXhNN3dodkNYUzFaSisyaU1HWXJBM0thMU1UZFFQYjBrTWNSeHFiV3FMc1hDTGFMbEwrZA==</con:encryptedContent>
+      <con:encryptedContent>VTJGc2RHVmtYMStmaVFUdnVscVJVeFZwakFvSE1BTEpsd0c0VUZMSVhxcHFWWDRmY2dPZ1hlV25wMVdyaVNPUDIwZGtvdGo3ajVkWg0KUitxaUpYNlZsUkoxZldrZmpGRk05NDlJQlc1S2ZtZWZVdEswemJNWXRlcStWT1kzR3Zyeg==</con:encryptedContent>
     </con:property>
   </con:properties>
   <con:wssContainer/>
