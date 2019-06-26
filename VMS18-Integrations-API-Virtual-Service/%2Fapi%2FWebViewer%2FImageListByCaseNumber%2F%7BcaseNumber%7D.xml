@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/api/WebViewer/ImageListByCaseNumber/{caseNumber}" method="GET" resourcePath="/api/WebViewer/ImageListByCaseNumber/{caseNumber}" id="6e940cbd-b860-417f-b689-c31352bf26e8" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6e940cbd-b860-417f-b689-c31352bf26e8fileName">%2Fapi%2FWebViewer%2FImageListByCaseNumber%2F%7BcaseNumber%7D</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="4f294e22-1ccd-4363-98c9-23ad3dc97d67" httpResponseStatus="200" mediaType="application/json" compressedBodyContent="aced00057372002f636f6d2e657669776172652e736f617075692e696d706c2e737570706f72742e436f6d7072657373656456616c7565000b8b02c748eeab0200025a000a636f6d707265737365645b0004646174617400025b4278700070" dataSource="">
+    <con:settings/>
+    <con:responseContent>[ {
+  "idRequest" : 0,
+  "caseNumber" : 0,
+  "imageManagerAssetID" : "string"
+} ]</con:responseContent>
+  </con:response>
+  <con:response name="Response 2" id="d49cbe08-130a-44ce-baff-5afe006326bb" httpResponseStatus="500" mediaType="application/json" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

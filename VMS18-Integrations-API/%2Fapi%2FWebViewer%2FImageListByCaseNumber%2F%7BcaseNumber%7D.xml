@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/WebViewer/ImageListByCaseNumber/{caseNumber}" path="/api/WebViewer/ImageListByCaseNumber/{caseNumber}" id="9d0a73f3-20df-4a2e-bfd5-6ce4109c5b4a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9d0a73f3-20df-4a2e-bfd5-6ce4109c5b4afileName">%2Fapi%2FWebViewer%2FImageListByCaseNumber%2F%7BcaseNumber%7D</con:setting>
+  </con:settings>
+  <con:parameters>
+    <con:parameter required="true">
+      <con:name>caseNumber</con:name>
+      <con:style>TEMPLATE</con:style>
+      <con:dataType>integer</con:dataType>
+      <con:description xsi:nil="true"/>
+    </con:parameter>
+  </con:parameters>
+  <con:method name="ImageListByCaseNumber" id="0480ba73-b4ed-4e63-88b0-d216de4a7ab2" method="GET">
+    <con:description/>
+    <con:settings/>
+    <con:parameters>
+      <con:parameter required="true">
+        <con:name>Auth</con:name>
+        <con:value/>
+        <con:style>HEADER</con:style>
+        <con:default/>
+      </con:parameter>
+    </con:parameters>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>200</con:status>
+      <con:params/>
+      <con:sampleContent>[ {
+  "idRequest" : 0,
+  "caseNumber" : 0,
+  "imageManagerAssetID" : "string"
+} ]</con:sampleContent>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:status>500</con:status>
+      <con:params/>
+    </con:representation>
+    <con:representation type="REQUEST">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+    <con:request name="Request 1" id="1aa2dadc-7cee-4f59-84c3-57cb1db64abc" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:8088/</con:endpoint>
+      <con:request/>
+      <con:originalUri>http://localhost/api/WebViewer/ImageListByCaseNumber/1</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:parameters>
+        <con:entry key="caseNumber" value="1"/>
+        <con:entry key="Auth" value="4A9CC7CF-6FE1-4E55-9B76-AA51A01754A3"/>
+      </con:parameters>
+      <con:parameterOrder>
+        <con:entry>caseNumber</con:entry>
+        <con:entry>Auth</con:entry>
+      </con:parameterOrder>
+    </con:request>
+  </con:method>
+</con:resource>
