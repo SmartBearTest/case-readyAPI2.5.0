@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default environment" name="REST Sample Project" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="8deb3f44-9361-43ec-91ae-27649755b72f" encryptionMode="Selected properties" updated="2.5.0" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default environment" name="REST Sample Project" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="8deb3f44-9361-43ec-91ae-27649755b72f" encryptionMode="Selected properties" updated="2.7.0" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
   <con:description>Demonstrates API calls to a local REST-based virtual service for creating a user account.</con:description>
   <con:settings>
     <con:setting id="8deb3f44-9361-43ec-91ae-27649755b72ffileName">REST-Sample-Project</con:setting>
   </con:settings>
-  <con:vcsConfiguration>
-    <con:vcsName>Git</con:vcsName>
-    <con:repositoryIdentifier>https://github.com/SmartBearTest/case-readyAPI2.5.0.git</con:repositoryIdentifier>
-  </con:vcsConfiguration>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
   <con:properties>
     <con:property encrypted="true">
       <con:name>username</con:name>
       <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-      <con:encryptedContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">VTJGc2RHVmtYMStkemo3dkNYbnU3VnlpeTVrbjlDUDV2RWlHVlM1cHdvNzAyVzdvNGR2VVluOUFmM2pRcWdIdUVjMHlrUDlpWXFoNw0KdEJ3QWZGRnhKWFkwREMvWXpBVnZpZnFlSGtiUDM5SGhVYlIxa1dMNGYzWHoyV0UzV0RHSA==</con:encryptedContent>
+      <con:encryptedContent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">VTJGc2RHVmtYMS96d1ZXbmxqOXJQem9VM2J6cDdZS0xwWDY1ckpCNG9WYy9iNnpYM05rT1NFTVBFOWtIYTI1T3lUaitBSjNBeXJuMg0KM1UwZVEyaWJPb01hallsU09lR0hZZEVjdmhCbzgwVU9CUVZIc2xvYm9tdEJVL053VHIrdw==</con:encryptedContent>
     </con:property>
   </con:properties>
   <con:wssContainer/>
