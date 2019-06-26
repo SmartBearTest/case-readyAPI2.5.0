@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:loadUiTest name="Load Test 1" id="62de5c0b-3d5e-41da-b1e7-0bbba1f2972f" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="soapUIObjectSourceId">6807bf67-21a2-4add-ae79-29496a981563</con:setting>
+    <con:setting id="soapUIObjectSourceType">soapUIObjectSourceType_TestCase</con:setting>
+    <con:setting id="62de5c0b-3d5e-41da-b1e7-0bbba1f2972ffileName">Load-Test-1</con:setting>
+  </con:settings>
+  <con1:loadui-project id="bb44efe2-810e-4073-8506-9e284b2058f5" label="Load Test 1" xmlns:con1="http://eviware.com/loadui/config">
+    <con1:properties>
+      <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+      <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">false</con1:property>
+      <con1:property propagates="true" key="ModelItem.saveReport" type="java.lang.Boolean">false</con1:property>
+      <con1:property propagates="true" key="ModelItem.reportFolder" type="java.lang.String"/>
+      <con1:property propagates="true" key="ModelItem.reportFormat" type="java.lang.String"/>
+      <con1:property propagates="true" key="Temporary project" type="java.lang.String"/>
+      <con1:property propagates="true" key="ModelItem.rate" type="java.lang.Long">10</con1:property>
+      <con1:property propagates="true" key="ModelItem.loadDistributionType" type="com.smartbear.load.facade.LoadDistributionType">PerScenario</con1:property>
+      <con1:property propagates="true" key="ModelItem.remoteMode" type="java.lang.String"/>
+    </con1:properties>
+    <con1:attributes>
+      <con1:property key="limits">Time=60;</con1:property>
+    </con1:attributes>
+    <con1:addons/>
+    <con1:scene label="New Scenario" id="6c4d5b1a-ce36-46ee-aeec-3cf9114cdc07">
+      <con1:properties>
+        <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+        <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">true</con1:property>
+        <con1:property propagates="true" key="SceneItem.followProject" type="java.lang.Boolean">true</con1:property>
+        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">100</con1:property>
+        <con1:property propagates="true" key="SceneItem.scenarioRateSpecific" type="java.lang.Long">10</con1:property>
+        <con1:property propagates="true" key="ModelItem.samplerOutputLevel" type="com.eviware.loadui.api.component.SoapUISamplerOutputLevel">TestCaseAndAllTestSteps</con1:property>
+      </con1:properties>
+      <con1:attributes>
+        <con1:property key="limits">Time=60;</con1:property>
+      </con1:attributes>
+      <con1:addons/>
+      <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 1" id="bee31e91-1cde-4f82-b642-6c54a34594be" category="Scheduler">
+        <con1:properties>
+          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+          <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
+          <con1:property propagates="true" key="startAt" type="java.lang.Long">0</con1:property>
+          <con1:property propagates="true" key="duration" type="java.lang.Long">5</con1:property>
+          <con1:property propagates="true" key="unit" type="java.lang.String">Sec</con1:property>
+          <con1:property propagates="true" key="mode" type="java.lang.String">Single</con1:property>
+          <con1:property propagates="true" key="defaultMode" type="java.lang.Boolean">true</con1:property>
+        </con1:properties>
+        <con1:attributes>
+          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Interval</con1:property>
+        </con1:attributes>
+        <con1:addons/>
+      </con1:component>
+      <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 1" id="6a0bfdee-0adf-40a1-a0d8-ee44a5d50235" category="Generators">
+        <con1:properties>
+          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+          <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">false</con1:property>
+          <con1:property propagates="true" key="limitVU" type="java.lang.Long">250</con1:property>
+          <con1:property propagates="true" key="load" type="java.lang.Long">5</con1:property>
+          <con1:property propagates="true" key="interval" type="java.lang.Long">1000</con1:property>
+        </con1:properties>
+        <con1:attributes>
+          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Fixed Load</con1:property>
+        </con1:attributes>
+        <con1:addons/>
+      </con1:component>
+      <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="Test account creation:accountcreation TestCase" id="9eb5a5d9-410b-4b21-bbdc-564a249e8517" category="Runners">
+        <con1:properties>
+          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+          <con1:property propagates="true" key="concurrentSamples" type="java.lang.Long">1000</con1:property>
+          <con1:property propagates="true" key="property_name_is_not_relevant_for_private_property" type="java.lang.Long">9223372036854775807</con1:property>
+          <con1:property propagates="true" key="maxQueueSize" type="java.lang.Long">1000</con1:property>
+          <con1:property propagates="true" key="countDiscarded" type="java.lang.Boolean">false</con1:property>
+          <con1:property propagates="true" key="disabledTestSteps" type="java.lang.String"/>
+          <con1:property propagates="true" key="_thinkTime" type="java.lang.Long">0</con1:property>
+          <con1:property propagates="true" key="ReadyApiTestCase" type="com.eviware.soapui.impl.wsdl.testcase.WsdlTestCase">6807bf67-21a2-4add-ae79-29496a981563</con1:property>
+          <con1:property propagates="true" key="raiseError" type="java.lang.Boolean">true</con1:property>
+          <con1:property propagates="true" key="outputTestCaseProperties" type="java.lang.Boolean">true</con1:property>
+          <con1:property propagates="true" key="OutputLevel" type="java.lang.String">TestCase only</con1:property>
+          <con1:property propagates="true" key="closeConnectionsAfterRequest" type="java.lang.Boolean">false</con1:property>
+          <con1:property propagates="true" key="disableSoapuiAssertions" type="java.lang.Boolean">false</con1:property>
+          <con1:property propagates="true" key="forceShareDatasources" type="java.lang.Boolean">true</con1:property>
+        </con1:properties>
+        <con1:attributes>
+          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Ready API TestCase Runner</con1:property>
+        </con1:attributes>
+        <con1:addons/>
+      </con1:component>
+      <con1:connection outputTerminalId="bee31e91-1cde-4f82-b642-6c54a34594be/outgoingTerminal" inputTerminalId="6a0bfdee-0adf-40a1-a0d8-ee44a5d50235/stateTerminal"/>
+      <con1:connection outputTerminalId="6a0bfdee-0adf-40a1-a0d8-ee44a5d50235/triggerTerminal" inputTerminalId="9eb5a5d9-410b-4b21-bbdc-564a249e8517/triggerTerminal"/>
+      <con1:connection outputTerminalId="9eb5a5d9-410b-4b21-bbdc-564a249e8517/runningTerminal" inputTerminalId="6a0bfdee-0adf-40a1-a0d8-ee44a5d50235/Sample Count"/>
+    </con1:scene>
+    <con1:statistics>
+      <con1:page title="DefaultLoadUIStatisticPage">
+        <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="" groupType="Monitors">
+          <con1:attributes>
+            <con1:property key="GroupId">1c6a4129-2c57-4c5c-9787-3ef623b220ed</con1:property>
+          </con1:attributes>
+        </con1:chartGroup>
+      </con1:page>
+    </con1:statistics>
+  </con1:loadui-project>
+  <con:loadUITestScenario projectId="bb44efe2-810e-4073-8506-9e284b2058f5" scenarioId="6c4d5b1a-ce36-46ee-aeec-3cf9114cdc07" name="New Scenario" id="dfb4830d-ac77-49d4-bec1-9780fc35b627">
+    <con:settings/>
+  </con:loadUITestScenario>
+  <con:loadUIPanelData id="b3b9e4dd-8077-43db-8472-f9ea2cd14956">
+    <con:panel>Log</con:panel>
+    <con:data>
+      <con:paramName>column_width@Timestamp</con:paramName>
+      <con:paramValue>84</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@Timestamp</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@ID</con:paramName>
+      <con:paramValue>74</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@ID</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@Test step status</con:paramName>
+      <con:paramValue>120</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@Test step status</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@TriggerTimestamp</con:paramName>
+      <con:paramValue>84</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@TriggerTimestamp</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@TimeTaken</con:paramName>
+      <con:paramValue>115</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@TimeTaken</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@_wait_time_</con:paramName>
+      <con:paramValue>106</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@_wait_time_</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@Bytes</con:paramName>
+      <con:paramValue>52</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@Bytes</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@HTTP Status</con:paramName>
+      <con:paramValue>90</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@HTTP Status</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@CurrentlyRunning</con:paramName>
+      <con:paramValue>75</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@CurrentlyRunning</con:paramName>
+      <con:paramValue>true</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@Request</con:paramName>
+      <con:paramValue>67</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@Request</con:paramName>
+      <con:paramValue>false</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_width@Response</con:paramName>
+      <con:paramValue>77</con:paramValue>
+    </con:data>
+    <con:data>
+      <con:paramName>column_visible@Response</con:paramName>
+      <con:paramValue>false</con:paramValue>
+    </con:data>
+  </con:loadUIPanelData>
+  <con:reportParameters/>
+</con:loadUiTest>

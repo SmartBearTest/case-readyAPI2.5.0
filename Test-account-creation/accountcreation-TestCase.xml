@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="accountcreation TestCase" searchProperties="true" id="6807bf67-21a2-4add-ae79-29496a981563" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>TestCase generated for REST Resource [accountcreation] located at [/accountcreation]</con:description>
+  <con:settings>
+    <con:setting id="6807bf67-21a2-4add-ae79-29496a981563fileName">accountcreation-TestCase</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="View Form" id="ca68c870-216b-4007-9ccc-b5ffa0dfc930">
+    <con:settings/>
+    <con:config service="Account creation" resourcePath="/accountcreation" methodName="Register a new account - viewAccountRegistration" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="View Form" mediaType="application/json" id="95e19827-3eed-4011-891f-f62164c5ebdd">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8096</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/accountcreation</con:originalUri>
+        <con:assertion type="MessageContentAssertion" id="94df73da-2172-46b2-ac5a-c7e924f9e8ba" name="Message Content Assertion">
+          <con:configuration xsi:type="con:MessageContentAssertion">
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[1]</con:xpath>
+              <con:element>meta</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>...</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[1]/@content</con:xpath>
+              <con:element>@content</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>HTML Tidy for Java (vers. 26 Sep 2004), see www.w3.org</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[1]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>generator</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[2]</con:xpath>
+              <con:element>meta</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>...</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[2]/@charset</con:xpath>
+              <con:element>@charset</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>utf-8</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/title[1]</con:xpath>
+              <con:element>title</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Account registration</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[3]</con:xpath>
+              <con:element>meta</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>...</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[3]/@content</con:xpath>
+              <con:element>@content</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>SoapUI Sample content</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/head[1]/meta[3]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>description</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/h1[1]</con:xpath>
+              <con:element>h1</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>Welcome!</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>account_registration_form</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/@method</con:xpath>
+              <con:element>@method</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>post</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/@action</con:xpath>
+              <con:element>@action</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>accountcreation</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[1]</con:xpath>
+              <con:element>input</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>...</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[1]/@placeholder</con:xpath>
+              <con:element>@placeholder</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>John Doe</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[1]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>username</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[2]</con:xpath>
+              <con:element>input</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>...</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[2]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>password</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[2]/@type</con:xpath>
+              <con:element>@type</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>password</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[3]</con:xpath>
+              <con:element>input</con:element>
+              <con:type xsi:nil="true"/>
+              <con:operator>...</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue xsi:nil="true"/>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[3]/@name</con:xpath>
+              <con:element>@name</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>password</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:elements>
+              <con:xpath>//html[1]/body[1]/form[1]/input[3]/@type</con:xpath>
+              <con:element>@type</con:element>
+              <con:type/>
+              <con:operator>=</con:operator>
+              <con:enabled>true</con:enabled>
+              <con:expectedValue>submit</con:expectedValue>
+              <con:hasValue>false</con:hasValue>
+              <con:numberType>false</con:numberType>
+            </con:elements>
+            <con:originalMessage><![CDATA[<html>
+   <head>
+      <meta content="HTML Tidy for Java (vers. 26 Sep 2004), see www.w3.org" name="generator"/>
+      <meta charset="utf-8"/>
+      <title>Account registration</title>
+      <meta content="SoapUI Sample content" name="description"/>
+   </head>
+   <body>
+      <h1>Welcome!</h1>
+      <form name="account_registration_form" method="post" action="accountcreation">
+         <input placeholder="John Doe" name="username" type="text"/>
+         <input name="password" type="password"/>
+         <input name="password" type="submit"/>
+      </form>
+   </body>
+</html>]]></con:originalMessage>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasource" name="DataSource" id="7e9bf4e0-bae0-4d33-8f11-d05faa6d666e">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSource type="Excel">
+        <con:configuration>
+          <file>C:/Users/lakshmi.arunachalam/Desktop/testdatasource.xlsx</file>
+          <worksheet/>
+          <cell>A2</cell>
+          <ignoreEmpty>false</ignoreEmpty>
+          <evaluateFormulas>false</evaluateFormulas>
+        </con:configuration>
+      </con:dataSource>
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:property>Username</con:property>
+      <con:property>Model</con:property>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Submit Account Details" id="dfc60d05-aa63-46fa-8644-2fdceb8b11db">
+    <con:settings/>
+    <con:config service="Account creation" resourcePath="/accountcreation" methodName="Register a new account - createUserAccount" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Submit Account Details" mediaType="application/json" postQueryString="false" id="3b8459ba-1d9f-49c7-83fe-37a17040b0b7">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://localhost:8096</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://localhost/accountcreation</con:originalUri>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters>
+          <con:entry key="Model" value="${DataSource#Model}"/>
+          <con:entry key="username" value="${DataSource#Username}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>username</con:entry>
+          <con:entry>Model</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasink" name="DataSink" id="44638145-1bc7-46e2-aaa1-8767347bb08d">
+    <con:settings/>
+    <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:dataSink type="Excel">
+        <con:configuration>
+          <file/>
+          <outfile>C:/Users/lakshmi.arunachalam/Desktop/Testdatasink.xlsx</outfile>
+          <worksheet>DataSink</worksheet>
+          <cell>A1</cell>
+          <evaluateFormulas>false</evaluateFormulas>
+          <append>false</append>
+        </con:configuration>
+      </con:dataSink>
+      <con:properties>
+        <con:property>
+          <con:name>username</con:name>
+          <con:value>${DataSource#Username}</con:value>
+        </con:property>
+        <con:property>
+          <con:name>Model</con:name>
+          <con:value>${DataSource#Model}</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="DataSource Loop" id="84f13d59-1edf-435b-8eaf-d1418b619095">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>DataSource</dataSourceStep>
+      <targetStep>Submit Account Details</targetStep>
+      <discardResults>false</discardResults>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>d6e19654-c7c2-41d5-8238-4b0ea65244c0</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>7e9bf4e0-bae0-4d33-8f11-d05faa6d666e</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>ca68c870-216b-4007-9ccc-b5ffa0dfc930</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>84f13d59-1edf-435b-8eaf-d1418b619095</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+  <con:breakPoints>
+    <con:testStepId>44638145-1bc7-46e2-aaa1-8767347bb08d</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

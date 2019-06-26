@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default environment" name="REST Sample Project" resourceRoot="" soapui-version="5.5.0" abortOnError="false" runType="SEQUENTIAL" id="8deb3f44-9361-43ec-91ae-27649755b72f" encryptionMode="Selected properties" updated="2.7.0" compositeProjectFormat="1.3" xmlns:con="http://eviware.com/soapui/config">
+  <con:description>Demonstrates API calls to a local REST-based virtual service for creating a user account.</con:description>
+  <con:settings>
+    <con:setting id="8deb3f44-9361-43ec-91ae-27649755b72ffileName">REST-Sample-Project</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property encrypted="true">
+      <con:name>username</con:name>
+      <con:value xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+      <con:encryptedContent>VTJGc2RHVmtYMSswTXNZZEdKSWpOMTVoUFl4MkNzYy9vamZNZG4vdEhwOHlRczVzS0FJR2dXcUJCczRQdkpnU3FLQTVYa3pIYVZDVw0KdHVqZWtJeG1hbTV0TjNhMTRESWI3WnJHejlWSzNqdTUvV2N2SUtTQzVQZVhZMXl5cS9hNw==</con:encryptedContent>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:sensitiveInformation/>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
